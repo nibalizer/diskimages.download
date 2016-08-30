@@ -2,7 +2,6 @@
   <head>
     <title>Daily Disk Image Builds</title>
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-    <script src="https://fgnass.github.io/spin.js/spin.min.js"></script>
     <!-- bootstrap -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -23,7 +22,27 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/locale/bootstrap-table-zh-CN.min.js"></script>
   </head>
   <body>
-    <h1>Disk Image Builds</h1>
-    <p>This site contains images created daily with <a href="http://docs.openstack.org/developer/diskimage-builder/">diskimage-builder</a>. You can see how they were made and add new ones at the <a href="https://github.com/nibalizer/diskimage.download">github repo</a>.</p>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Daily Disk Image Builds</div>
+  <div class="panel-body">
+    <p>This site contains images created daily with <a href="http://docs.openstack.org/developer/diskimage-builder/">diskimage-builder</a>. You can see how they were made and add new ones at the <a href="https://github.com/nibalizer/diskimages.download">github repo</a>.</p>
+  </div>
+
+  <!-- Table -->
+  <table class="table">
+    <tr> 
+      <th>Name</th>
+      <th>Link</th>
+    </tr>
+    <tr>
+      <td>Ubuntu 14.04 x86_64</td>
+      <td><a href="trusty_x64">Download</a></td>
+    <tr>
+      <td>Centos 6 x86_64</td>
+      <td><a href="centos6_x64">Download</a></td>
+    </tr>
+  </table>
+</div>
   </body>
 </html>
