@@ -1,6 +1,6 @@
 #!/bin/bash
 
-build_scripts='build_image_centos6.sh build_image_ubuntu.sh'
+build_scripts='build_image_centos6.sh build_image_trusty.sh'
 
 if [ -d diskimage-builder ]; then
     cd diskimage-builder
