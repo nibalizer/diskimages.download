@@ -25,5 +25,5 @@ cd ..
 for script in $build_scripts
 do
     date    > logs/${script}.log
-    $script >> logs/${script}.log
+    ./diskimage.download/$script >> logs/${script}.log
 done
