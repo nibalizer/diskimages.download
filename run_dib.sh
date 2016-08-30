@@ -25,7 +25,7 @@ cd ..
 for script in $build_scripts
 do
     date    > logs/${script}.log
-    ./diskimage.download/$script >> logs/${script}.log
+    ./diskimages.download/$script >> logs/${script}.log
 done
 
-cp index.html /var/www/html/diskimages/index.html
+cp diskimages.download/index.html /var/www/html/diskimages/index.html
