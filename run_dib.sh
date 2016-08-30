@@ -18,6 +18,10 @@ else
     pip install -U pip
 fi
 
+cd diskimage-builder
+pip install -U .
+cd ..
+
 for script in build_scripts
 do
     date    > logs/${script}.log
