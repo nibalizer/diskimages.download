@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Copy the "website" in to place
+cp diskimages.download/index.html /var/www/html/diskimages/index.html
+
 build_scripts='build_image_centos6.sh build_image_trusty.sh'
 
 if [ -d diskimage-builder ]; then
@@ -28,4 +31,3 @@ do
     ./diskimages.download/$script >> logs/${script}.log
 done
 
-cp diskimages.download/index.html /var/www/html/diskimages/index.html
