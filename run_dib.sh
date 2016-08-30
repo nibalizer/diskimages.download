@@ -2,7 +2,7 @@
 
 build_scripts='build_image_centos6.sh'
 
-if [ -d diskimage-buidler ]; then
+if [ -d diskimage-builder ]; then
     cd diskimage-builder
     git pull
     cd ..
