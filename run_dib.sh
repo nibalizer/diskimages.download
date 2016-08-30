@@ -22,7 +22,7 @@ cd diskimage-builder
 pip install -U .
 cd ..
 
-for script in build_scripts
+for script in $build_scripts
 do
     date    > logs/${script}.log
     $script >> logs/${script}.log
