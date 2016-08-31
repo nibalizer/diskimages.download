@@ -3,7 +3,7 @@
 # Copy the "website" in to place
 cp diskimages.download/index.html /var/www/html/diskimages/index.html
 
-build_scripts='build_image_centos6.sh build_image_trusty.sh build_image_xenial.sh'
+build_scripts='build_image_centos6.sh build_image_centos7.sh build_image_trusty.sh build_image_xenial.sh'
 
 dib_types="qcow2 tar vhd docker aci raw"
 
